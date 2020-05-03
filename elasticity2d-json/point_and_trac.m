@@ -3,7 +3,7 @@ function f = point_and_trac(f);
 include_flags; 
  
 % Assemble point forces 
-f(ID) = f(ID) + P(:); 
+f(:) = f(:) + P(ID); 
 %f(ID) = f(ID) + P(ID);   % original version
 
 % Compute nodal boundary force vector 
